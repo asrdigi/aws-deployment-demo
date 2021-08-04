@@ -7,14 +7,14 @@ pipeline {
                 sh "mvn clean compile"
             }
         }
-    /*   
+       
 		stage('Junit5 Test') { 
             steps {
 
                 sh "mvn test"
             }
         }
-    */    
+        
         stage('Maven Build') { 
             steps {
                 sh "mvn package"
