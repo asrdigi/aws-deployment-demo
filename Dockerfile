@@ -1,4 +1,5 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM openjdk:8-jdk-alpine
+#FROM adoptopenjdk/openjdk11:alpine-jre
 #RUN addgroup -S spring && adduser -S spring -G spring
 #USER spring:spring
 VOLUME /tmp
