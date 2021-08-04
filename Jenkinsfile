@@ -15,7 +15,7 @@ pipeline {
             }
         }
         
-        stage('Deploy') { 
+        stage('Maven Build') { 
             steps {
                 sh "mvn package"
             }
