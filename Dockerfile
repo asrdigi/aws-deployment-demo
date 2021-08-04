@@ -8,4 +8,4 @@ ARG JAR_FILE=target/spring-boot-docker.jar
 ADD ${JAR_FILE} spring-boot-docker.jar
 ENTRYPOINT ["java","-jar","/spring-boot-docker.jar"]
 #EXPOSE 2222
-EXPOSE 8090
+EXPOSE 8080
