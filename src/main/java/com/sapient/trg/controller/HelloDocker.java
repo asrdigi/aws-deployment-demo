@@ -11,7 +11,7 @@ import com.sapient.trg.model.Greeting;
 @RestController
 @RequestMapping("/v1/docker")
 public class HelloDocker {
-	
+	@RequestMapping("/greet")
 	public ResponseEntity<Greeting> sayHello(){
 		try {
 			return new ResponseEntity<>(new Greeting("Hello Docker!"),HttpStatus.OK);
