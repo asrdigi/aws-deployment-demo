@@ -2,7 +2,7 @@ FROM openjdk:8-jdk-alpine
 #FROM adoptopenjdk/openjdk11:alpine-jre
 #RUN addgroup -S spring && adduser -S spring -G spring
 #USER spring:spring
-VOLUME /tmp
+#VOLUME /tmp
 ARG JAR_FILE=target/spring-boot-docker.jar
 #COPY ${JAR_FILE} spring-boot-docker.jar
 ADD ${JAR_FILE} spring-boot-docker.jar
